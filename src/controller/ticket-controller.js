@@ -10,6 +10,7 @@ const create = async(req, res) => {
             message: "Succefully registered a email reminder"
         })
     } catch (error) {
+        //console.log("FROM CONTROLLER", error);
         return res.status(500).json({
             success: false,
             data: response,
